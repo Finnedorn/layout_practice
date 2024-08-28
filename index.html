@@ -32,21 +32,42 @@
                 </div>
                 <!-- cart -->
                 <div class="col-4">
-                    <div class="card rounded-4 p-4">
-                        <h3 id="cart" class="bolder">
+                    <div class="card border-0 rounded-4 p-4">
+                        <h3 id="cart" class="bolder font-my-red">
                           Your Cart
-                          <span>(107)</span>
+                          <span id="total">
+                            <!-- qua inseriro' il totale del carrello -->
+                          </span>
                         </h3>
-                        <div class="d-flex flex-column">
+                        <div id="order" class="d-flex flex-column">
                             <!-- order body -->
                             <div>
+                              <div class="d-flex justify-content-between">
+                                <div>
+                                  <h5>
+                                    Classic Tiramisu
+                                  </h5>
+                                  <div>
+                                    <span class="font-my-red bold">1x</span>
+                                    <span class="font-my-grey bold">$3.99</span>
+                                    <span class="ms-2 font-my-grey bolder">@$1.99</span>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="rounded-5 remove-item-btn me-3">
+                                    <img class="w-100 x" src="./assets/images/icon-remove-item.svg" alt="removeitemicon">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="w-100 pb-3 line "></div>
                             </div>
                             <!-- order footer -->
                             <div>
-                                <div class="p-2 mb-2 ">
-                                  <span>This is a <strong>carbon-neutral</strong> delivery</span>
+                                <div class="p-3 my-3 d-flex align-items-center carbon-adv justify-content-center rounded-2">
+                                  <img class="mb-2" src="./assets/images/icon-carbon-neutral.svg" alt="carbonneutralicon">
+                                  <h6 class="ms-2">This is a <strong>carbon-neutral</strong> delivery</h6>
                                 </div>
-                                <div class="btn btn-primary rounded-5 text-light fs-5 w-100 py-3">
+                                <div class="btn btn-primary btn-red rounded-5 text-light fs-5 w-100 py-3 border-0">
                                   Confirm Order
                                 </div>
                             </div>

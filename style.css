@@ -14,7 +14,9 @@
 
 :root {
   --font-black: #140604;
+  --font-lighter-grey: #d3c7c7;
   --font-light-grey: #756e6e;
+  --font-dark-grey: #484545;
   --primary-white: #fff7f1;
   --secondary-white: #ffffff;
   --primary-red: #cc390e;
@@ -40,6 +42,14 @@
   color: var(--font-light-grey);
 }
 
+.font-my-red {
+  color: var(--primary-red) !important;
+}
+
+.font-my-grey {
+  color: var(--font-light-grey) !important;
+}
+
 /* body */
 
 .bg-my-primary {
@@ -63,7 +73,7 @@
   transition: all 0.5s;
 }
 
-.card:hover {
+.card.position-relative:hover {
   transform: translateY(-10px);
   transition: all 0.5s;
 }
@@ -71,5 +81,39 @@
 
 /* cart */
 
-.adv-wrapper {
-  background-color: var(--secondary-white);}
+.carbon-adv {
+background-color: var(--primary-white) !important;
+}
+
+.btn-red {
+  
+  background-color: var(--secondary-red) !important;
+}
+
+.btn-red:hover {
+  background-color: var(--primary-red) !important;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.remove-item-btn > img {
+  width: 22px;
+  height: 22px;
+}
+
+
+.remove-item-btn:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.line {
+  border-bottom: 2px solid var(--font-lighter-grey);
+
+}
+
+.x{
+  border: 2px solid var(--font-lighter-grey);
+  border-radius: 50px;
+  padding: 2px;
+}
