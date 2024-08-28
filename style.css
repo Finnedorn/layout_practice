@@ -15,7 +15,7 @@
 :root {
   --font-black: #140604;
   --font-light-grey: #756e6e;
-  --primary-white: #fcf8f5;
+  --primary-white: #fff7f1;
   --secondary-white: #ffffff;
   --primary-red: #cc390e;
   --secondary-red: #952c0c;
@@ -42,12 +42,34 @@
 
 /* body */
 
+.bg-my-primary {
+  background-color: var(--primary-white) !important;
+}
+
+
 /* dessert */
 
 .add-to-cart {
-  bottom: 20px;
+  bottom: -5px;
+  left: 50px;
 }
 
 .add-to-cart-btn {
   border: 2px solid var(--font-light-grey);
 }
+
+.add-to-cart-btn:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+
+
+/* cart */
+
+.adv-wrapper {
+  background-color: var(--secondary-white);}
