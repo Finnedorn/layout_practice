@@ -1,42 +1,53 @@
-@font-face {
-    font-family: MioFont-Bold;
-    src: local(), url(./fonts/RedHatText-Bold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: MioFont-Regular;
-    src: local(), url(./fonts/RedHatText-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: MioFont-SemiBold;
-    src: local(), url(./fonts/RedHatText-SemiBold.ttf) format('truetype');
-}
-
 /* reset */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--font-black);
+}
+
+/* palette */
+
+:root {
+  --font-black: #140604;
+  --font-light-grey: #756e6e;
+  --primary-white: #fcf8f5;
+  --secondary-white: #ffffff;
+  --primary-red: #cc390e;
+  --secondary-red: #952c0c;
 }
 
 /* fonts */
 
-.mio-font-bold {
-    font-family: MioFont-Bold;
+.base {
+  font-weight: 400;
 }
 
-.mio-font-regular {
-    font-family: MioFont-Regular;
+.bold {
+  font-weight: 600;
 }
 
-.mio-font-semi-bold {   
-    font-family: MioFont-SemiBold;
+.bolder {
+  font-weight: 700;
+}
+
+.tiny-text {
+  font-size: 0.9rem;
+  color: var(--font-light-grey);
 }
 
 /* body */
 
+/* dessert */
 
+.add-to-cart {
+  bottom: 20px;
+}
 
-
+.add-to-cart-btn {
+  border: 2px solid var(--font-light-grey);
+}
