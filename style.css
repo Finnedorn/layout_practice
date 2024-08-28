@@ -1,0 +1,42 @@
+@font-face {
+    font-family: MioFont-Bold;
+    src: local(), url(./fonts/RedHatText-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: MioFont-Regular;
+    src: local(), url(./fonts/RedHatText-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: MioFont-SemiBold;
+    src: local(), url(./fonts/RedHatText-SemiBold.ttf) format('truetype');
+}
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+
+.mio-font-bold {
+    font-family: MioFont-Bold;
+}
+
+.mio-font-regular {
+    font-family: MioFont-Regular;
+}
+
+.mio-font-semi-bold {   
+    font-family: MioFont-SemiBold;
+}
+
+/* body */
+
+
+
+
