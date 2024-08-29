@@ -23,6 +23,28 @@
   --secondary-red: #952c0c;
 }
 
+/* scrollbar */
+
+
+/* Seleziona l'intera barra di scorrimento */
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px; 
+}
+
+/* Colore e stile della "traccia" della scrollbar */
+::-webkit-scrollbar-track {
+  background: var(--primary-white); 
+  border-radius: 10px; 
+}
+
+/* Colore e stile del "thumb" (la parte scorrevole) della scrollbar */
+::-webkit-scrollbar-thumb {
+  background: var(--font-light-grey); 
+  border-radius: 10px; 
+}
+
+
 /* fonts */
 
 .base {
@@ -60,8 +82,11 @@
 /* dessert */
 
 .add-to-cart {
-  bottom: -5px;
-  left: 50px;
+  bottom: -5px; 
+}
+
+.icon-white {
+  color: var(--secondary-white);
 }
 
 .add-to-cart-btn {
@@ -81,12 +106,21 @@
 
 /* cart */
 
+.sticky-container {
+  flex: 1;
+}
+
+.sticky-cart {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .carbon-adv {
 background-color: var(--primary-white) !important;
 }
 
 .btn-red {
-  
   background-color: var(--secondary-red) !important;
 }
 
@@ -117,3 +151,37 @@ background-color: var(--primary-white) !important;
   border-radius: 50px;
   padding: 2px;
 }
+
+/* modale */
+
+
+.close-btn {
+  background-color: var(--font-dark-grey) !important;
+}
+
+.close-btn:hover {
+  background-color: var(--font-light-grey) !important;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+#animation-cart {
+  animation: modalSpawn 0.2s linear;
+}
+
+
+@keyframes modalSpawn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+/* media queries */
+
+
